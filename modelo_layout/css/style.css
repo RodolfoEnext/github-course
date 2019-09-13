@@ -14,44 +14,87 @@
 
 div {
     text-align: center;
-    background: rgba(184, 91, 91, 0.7);;
-    padding: 10%;
+    padding: 8%;
 }
 
 .container-grid {
     display: grid;
-    grid-template-areas: 'header header header header header' 'menu main main aside aside' 'menu footer footer footer footer';
-    background: rgba(0, 0, 0, .7);
+    grid-template-areas: 'header header header header header' 'menu main main main aside' 'footer footer footer footer footer';
+    background: rgba(253, 253, 253, 0.979);
     grid-gap: 10px;
     padding: 0;
 }
 
 .item1 {
     grid-area: header;
-    background: rgba(255, 115, 0, 0.63);
-
+    color: #000;
+    background: rgba(140, 140, 240, 0.39);
+    width: 100%;
 }
 
 .item2 {
     grid-area: menu;
-    background:rgba(0, 0, 0, 0.288);
+    position: fixed;
+    margin-left:5px;
+    padding: 1%;
+    /* background: rgba(214, 203, 203, 0.3); */
+    border-radius: 10px;
 }
 
 .item3 {
     grid-area: main;
+    background: #fff; 
+    border-radius: 10px;
 }
 
 .item4 {
+    margin-right:5px;
     grid-area: aside;
+    background: rgba(214, 203, 203, 0.3);
+    border: 1px solid #dfddddf1;
+    border-radius: 10px;
 }
 
 .item5 {
     grid-area: footer;
-    background:rgba(0, 0, 0, .7);
+    background: black;
+    padding: .1%;
+}
+
+.item5 ul, .item5 li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* .item2 .card{
+    padding: 10px;
+} */
+
+.item2 .card a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.item2 ul, .item2 li{
+    padding: 10px;
+    display: block;
+}
+
+.item2 li{
+    background: red;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.menu .card{
+    /* background: red; */
+    border-radius: 10px;
+    float: left;
 }
 
 @media screen and (max-width:750px){
-    .container-grid{
+    .container-grid, .footer li{
         display: block;
     }
 }
