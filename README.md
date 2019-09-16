@@ -1,12 +1,10 @@
 <h1>Seja bem-vindo</>
 <p>REF87</p>
-<<<<<<< Updated upstream
-=======
+
 <h2> essa é uma pagina de treino de html</h2>
 <h1>linha para teste</h1
 asdabusidhaklncauiahwpdoas
 <p>teste grafico</p
 alksdaklscmansvjna>
 
-add rodolfo 
->>>>>>> Stashed changes
+add rodolfo branch 5
