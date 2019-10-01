@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="discription" content="Págnina de treinamento">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Finalizando loteria</title>
+</head>
+
+<body>
+    <h1>Loteria</h1>
+    <div id="output"></div>
+
+
+    <script>
+        //VARIÁVEL SORTEADOS CONTEM COMO VALOR A FUNÇÃO QUE OBTEM OS NÚMEROS SORTEADOS;
+        var sorteados = obtemNumerosSorteados();
+        var output = document.querySelector('#output');
+        var msg = '';
+
+        //MENSAGEM PARA MOSTRAR OS NÚMEROS SORTEADOS NO HTML
+        msg += `<h3>Números sorteados: </h3>`;
+
+        // JOIN FAZ A SEPARAÇÃO POR UM CARACTER DESEJÁVEL
+        msg += `<p> ${sorteados.join(', ')} </p>`;
+
+        alert("Iremos sortear 6 números. Você deverá inserir 6 números seguidos de seus nomes, sendo um nome por vez e depois o número.");
+
+        //ARRAY MEUS OBJETOS
+        var meusObjetos = [];
+
+        //lAÇO PARA PERGUNTA 6X O NOME E NÚMERO DA PESSOA
+        //EVITA REDUNDÂNCIA DE CÓDIGO
+        for (var i = 0; i < 6; i++) {
+            var nome = prompt("Digite seu nome: ");
+            var n = Number(prompt(`${nome} digite um número`));
+            var obj = JSON.parse(`{"nome": "${nome}", "numero":${n}}`);
+            var f = 0;
+            meusObjetos.push(obj);
+
+        }
+        //MOSTRAR NÚMEROS SORTEADOS
+        alert(`Os números sorteados foram: ${sorteados}`);
+
+        //LAÇO PARA PEGAR CADA NÚMERO DENTRO DA ARRAY MEUS OBJETOS
+        for (var i = 0; i < meusObjetos.length; i++) {
+            msg += `<p> ${meusObjetos[i].nome} apostou no nº:${meusObjetos[i].numero}:`
+
+            //CONDIÇÃO PARA COMPARAR O NUMERO SORTEADO COM O NÚMERO DA ARRAY MEUS OBJETOS
+            //O -1 É PARA PEGAR NÚMERO QUE NÃO EXISTE NA ARRAY
+            //SE O NÚMERO NÃO EXISTE A PESSOA SORTEADA ERROU, O CONTRÁRIO ACERTOU
+            if (sorteados.indexOf(meusObjetos[i].numero) == -1) {
+                msg += ` Errou!`
+            } else {
+                msg += ` Acertou!`
+            }
+            msg += `</p>`
+        }
+
+        output.innerHTML = msg;
+        output.classList.add('format');
+
+        //FUNÇÃO QUE OBTEM OS NÚMEROS SORTEADOS
+        function obtemNumerosSorteados() {
+            var sorteados = [];
+
+            //FUNÇÃO PARA SORTEAR
+            function sortear() {
+                //MATH FLOOR = ARRENDODA O NÚMERO
+                //MATH RANDOM = RETORNA NÚMEROS ALEATÓRIOS NÃO SENDO INTEIROS, SIM QUEBRADOS
+                return Math.floor(Math.random() * 60);
+            }
+
+            //LOOP PARA SORTEAR ATÉ 6
+            while (sorteados.length < 6) {
+                var sorteado = sortear();
+                //CONDIÇÃO COM INDEXOF SENDO IGUAL A -1 (NÃO ESTÁ DENTRO DOS NÚMEROS SORTEADOS)
+                if (sorteados.indexOf(sorteado) == -1) {
+                    sorteados[sorteados.length] = sorteado;
+                }
+            }
+            return sorteados;
+        }
+    </script>
+</body>
+
+</html>
