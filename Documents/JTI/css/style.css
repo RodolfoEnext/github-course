@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* line 1, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 11, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-bg {
+  background: rgba(232, 232, 232, 0.4);
+}
+
+/* line 15, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-menu {
+    max-width: 320px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
+/* line 32, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-container {
+  max-width: 1280px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 32, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-container {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 47, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 51, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-nav ul li {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 56, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-nav ul li:hover {
+  font-weight: bold;
+}
+
+/* line 60, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-nav ul li a {
+  cursor: pointer;
+  width: 100%;
+  margin-right: 40px;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+/* line 69, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-menu-nav ul li:last-child a {
+  color: #06B085;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 46, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-menu-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  /* line 82, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+  }
+  /* line 89, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-menu-nav li {
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  /* line 95, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-menu-nav li a {
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 20px;
+  }
+}
+
+/* line 105, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.menu-logo {
+  display: flex;
+  align-items: center;
+  left: -95px;
+  position: relative;
+}
+
+/* line 111, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.menu-logo img {
+  max-width: 100%;
+}
+
+/* line 116, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-nossa-marca {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 123, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 127, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* line 134, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--1 {
+  margin-bottom: 15px;
+}
+
+/* line 137, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--1 p {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+/* line 141, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--1 h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 40px;
+  margin-top: 85px;
+  margin-bottom: 35px;
+}
+
+/* line 148, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--2 {
+  display: flex;
+  width: 485px;
+  border: 2px solid #57BAA2;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* line 155, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--2 p {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+/* line 159, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--2 .icon-exclamacao {
+  margin-right: 10px;
+}
+
+/* line 163, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--2 .icon-exclamacao span:before {
+  content: 'i';
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: 4px solid #57BAA2;
+  font-size: 20px;
+  color: #57BAA2;
+  font-weight: bold;
+  padding-top: 3px;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* line 183, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--3 button {
+  -webkit-appearance: none;
+  border: none;
+  width: 275px;
+  padding: 10px;
+  background: rgba(6, 176, 133, 0.7);
+  color: #fff;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* line 196, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--3 p {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 14px;
+  color: gray;
+}
+
+/* line 203, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto--link {
+  margin-bottom: 20px;
+}
+
+/* line 207, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto-fundo {
+  height: 170px;
+}
+
+/* line 210, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-boleto-texto-fundo:before {
+  content: 'Saiba como pedir sua 2ºVia de boleto';
+  text-shadow: 1px 0px 0px #06B085, -1px 0px 0px #06B085, 0px 1px 0px #06B085, 0px -1px 0px #06B085;
+  position: relative;
+  left: -157px;
+  width: 115%;
+  top: -116px;
+  display: inline-block;
+  color: #fff;
+  font-size: 120px;
+  font-family: 'Roboto', sans-serif;
+  opacity: .3;
+  z-index: -1;
+}
+
+/* line 232, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-footer-bg {
+  background: linear-gradient(90deg, #A18BAC, #D89497, #C3B4A0, #1BB0B2) fixed;
+}
+
+/* line 238, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+/* line 248, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+.x-footer-info p,
+.x-footer-info a {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 238, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_geral.scss */
+  .x-footer-info {
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 1, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_swiper.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../../Users/rodolfo.ferreira/Documents/JTI/css/scss/_swiper.scss */
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

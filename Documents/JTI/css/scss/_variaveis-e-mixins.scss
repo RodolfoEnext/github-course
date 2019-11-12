@@ -1,0 +1,54 @@
+@mixin border-box($border-box){
+    -moz-box-sizing: $border-box;
+    -webkit-box-sizing: $border-box;
+    box-sizing: $border-box;
+}
+
+@mixin type-1($font) {
+    font-family: 'Roboto', sans-serif;
+    color      : #000;
+    @if $font==12 {
+        font-size: 12px;
+    }
+
+    @else if $font==14 {
+        font-size: 14px;
+    }
+
+    @else if $font==20 {
+        font-size  : 20px;
+    }
+
+    @else if $font==22 {
+        font-size  : 22px;
+        font-weight: bold;
+    }
+
+    @else if $font==30 {
+        font-size: 30px;
+    }
+
+    @else if $font==40 {
+        font-size: 40px;
+    }
+}
+
+@mixin device($dispositivo){
+    @if $dispositivo == mobile{
+        @media screen and(max-width: 767px){
+            @content;
+        }
+    }
+
+    @else if $dispositivo == tablet {
+        @media screen and(min-width: 768px) and (max-width: 1299px){
+            @content;
+        }
+    }
+
+    @else if $dispositivo == desktop{
+        @media screen and(min-width: 1300px){
+            @content;
+        }
+    }
+}
